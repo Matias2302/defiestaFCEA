@@ -1,0 +1,390 @@
+body, header, div, section, dl {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-family: 'PT Sans', sans-serif; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #F08374;
+  background: url(../images/Defiestafondoweb_01.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.65); }
+
+header {
+  text-align: center; }
+
+header.vanish {
+  display: -ms-grid;
+  display: grid;
+  padding: 7em 2em 4em 2em; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+#wrapper {
+  margin: 0 auto;
+  width: 74em;
+  max-width: calc(100% - 4em);
+  -webkit-transition: -webkit-filter 0.25s ease;
+  transition: -webkit-filter 0.25s ease;
+  -o-transition: filter 0.25s ease;
+  transition: filter 0.25s ease;
+  transition: filter 0.25s ease, -webkit-filter 0.25s ease; }
+
+.logo .logo-2 {
+  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.logo img {
+  width: 600px; }
+
+.logo-2 img {
+  width: 400px; }
+
+#nav {
+  width: 74em;
+  color: #636363;
+  position: absolute;
+  max-width: calc(100% - 4em);
+  padding: 1em;
+  background-color: #f7f7f7;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+  cursor: default;
+  text-align: center; }
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  list-style-type: none; }
+
+#nav ul li {
+  -webkit-transition: margin 0.2s ease;
+  -o-transition: margin 0.2s ease;
+  transition: margin 0.2s ease;
+  margin: 0 0.35em;
+  padding: 0;
+  vertical-align: middle; }
+
+#nav ul li a {
+  -webkit-transition: font-size 0.2s ease;
+  -o-transition: font-size 0.2s ease;
+  transition: font-size 0.2s ease;
+  display: inline-block;
+  height: 2.25em;
+  line-height: 2.25em;
+  border: 0;
+  border-radius: 8px; }
+
+.vanish {
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s; }
+
+#nav.alt {
+  position: fixed;
+  top: 0;
+  padding: 0.5em 1em;
+  background-color: rgba(247, 247, 247, 0.95);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: 10000; }
+
+#nav.alt ul li {
+  margin: 0 0.175em; }
+
+#nav.alt ul li a {
+  font-size: 0.9em; }
+
+#nav a:hover {
+  color: #636363; }
+
+#nav ul li a.active {
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 4.5em;
+  color: #636363;
+  background-color: #fff;
+  border-radius: 0.25em; }
+
+#intro, #locacion, #media {
+  padding: 5em 5em 3em 5em; }
+
+/*=======Cards===============*/
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.escena {
+  padding: 5em 5em 3em 5em;
+  width: 20em;
+  height: 30em;
+  -webkit-perspective: 600px;
+  perspective: 600px; }
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.card_face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.card_face_front {
+  background: url("https://www.pikpng.com/pngl/m/329-3291266_small-mario-mario-super-mario-world-hd-png.png") no-repeat center center;
+  background-size: contain; }
+
+.card_face_back {
+  background: url("https://simg.nicepng.com/png/small/168-1684411_super-mario-world-yoshi-sprite-download-mario-super.png") no-repeat center center;
+  background-size: contain;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.card.is-flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+/*============================*/
+/*=======Footer===============*/
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 5em 5em 3em 5em;
+  width: calc(100% + 2em);
+  margin: 0 0 3em -2em; }
+
+#footer > * {
+  width: calc(50% - 2em);
+  margin-left: 2em; }
+
+#footer .copyright {
+  width: 100%;
+  margin: 2.5em 0 2em 0;
+  font-size: 0.8em;
+  text-align: center; }
+
+ul.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: default;
+  list-style: none;
+  margin-left: -1em;
+  padding-left: 0; }
+
+ul.actions li {
+  padding: 0 0 0 1em;
+  vertical-align: middle; }
+
+ul.actions.special {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0; }
+
+ul.actions.special li:first-child {
+  padding-left: 0; }
+
+ul.actions.stacked {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 0; }
+
+ul.actions.stacked li {
+  padding: 1.3em 0 0 0; }
+
+ul.actions.stacked li:first-child {
+  padding-top: 0; }
+
+ul.actions.fit {
+  width: calc(100% + 1em); }
+
+ul.actions.fit li {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  width: 100%; }
+
+ul.actions.fit li > * {
+  width: 100%; }
+
+ul.actions.fit.stacked {
+  width: 100%; }
+
+dl {
+  margin: 0 0 2em 0; }
+
+dl.alt dt {
+  display: block;
+  width: 3em;
+  margin: 0;
+  clear: left;
+  float: left;
+  font-weight: bold; }
+
+dl.alt dd {
+  margin: 0 0 0.85em 5.5em; }
+
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0; }
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 0.65em 0 0; }
+
+ul.icons li:last-child {
+  padding-right: 0 !important; }
+
+.icon.major {
+  border-color: rgba(255, 255, 255, 0.35); }
+
+.icon.major:before {
+  border-color: rgba(255, 255, 255, 0.35); }
+
+.icon.alt {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff; }
+
+.icon.alt:hover {
+  background-color: rgba(255, 255, 255, 0.075); }
+
+.icon.alt:active {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+footer.major {
+  margin-top: 3em; }
+
+.icon > .label {
+  display: none; }
+
+.icon.alt:before {
+  display: block;
+  font-size: 1.30em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em; }
+
+.fab {
+  border-radius: 10px;
+  border: 2px solid #000; }
+
+/*==========================================*/
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*=== Media queries===*/
+@media screen and (max-width: 1280px) {
+  #footer {
+    padding: 4em 4em 2em 4em; } }
+
+@media screen and (max-width: 980px) {
+  #footer {
+    padding: 4em 3em 2em 3em;
+    display: block;
+    margin: 0 0 3em 0;
+    width: 100%; }
+  #footer > * {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 3em; }
+  #footer .copyright {
+    text-align: left; } }
+
+@media screen and (max-width: 736px) {
+  #footer {
+    padding: 3em 2em 1em 2em; } }
+
+@media screen and (max-width: 480px) {
+  body {
+    background: url(../images/Defiestafondoweb_01.jpg) no-repeat right fixed; }
+  #intro, #locacion, #media {
+    padding: 2em 2em 0em 2em; }
+  .logo img {
+    width: 250px; }
+  .logo-2 img {
+    width: 150px; }
+  #locacion img {
+    width: 200px; }
+  #footer {
+    padding: 2.5em 1em 0.5em 1em; } }
+
+/*==========================================*/

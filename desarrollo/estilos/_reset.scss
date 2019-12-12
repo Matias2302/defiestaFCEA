@@ -1,0 +1,16 @@
+body, header, div, section, dl {
+    margin: 0;
+    padding: 0;
+    border:0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
