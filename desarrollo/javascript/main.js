@@ -92,8 +92,27 @@ var $nav = $('#nav');
 		});
 			})(jQuery);
 			
-var card = document.querySelector('.card');
-card.addEventListener('click', function(){
-	card.classList.toggle('is-flipped');
-	console.log("holas");
-});
+// var card = document.querySelector('.card');
+// card.addEventListener( 'click', function() {
+// 	card.classList.toggle('is-flipped');
+//   });
+//   $('.card').on('click', function() {
+// 	$(this).parent('.card').toggleClass('is-flipped');
+//   });
+
+//   var card = document.querySelector('.card');
+// card.addEventListener( 'click', function() {
+//   card.classList.toggle('is-flipped');
+// });
+
+function flip(event){
+	var element = event.currentTarget;
+	if (element.className === "card") {
+    if(element.style.transform == "rotateY(180deg)") {
+      element.style.transform = "rotateY(0deg)";
+    }
+    else {
+      element.style.transform = "rotateY(180deg)";
+    }
+  }
+};
