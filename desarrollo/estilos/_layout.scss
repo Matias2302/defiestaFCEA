@@ -34,6 +34,10 @@ a{
     color:inherit;
 }
 
+h2{
+    font-size:45px;
+}
+
 #wrapper{  
     margin:0 auto;
     width:74em;
@@ -131,11 +135,19 @@ a{
     color: #636363;
     background-color: #fff;
     border-radius: 0.25em;
-     
+    font-size: 20px;
+}
+
+#main h2{
+    text-align: center;
 }
 
 #intro, #locacion, #media{
-    padding: 5em 5em 3em 5em;
+    padding: 2em 5em 2em 5em;
+}
+
+.plano{
+    width:100%;
 }
 /*=======Cards===============*/
 
@@ -175,13 +187,43 @@ a{
     backface-visibility: hidden;
 }
 
-.card_face_front{
-    background:url('https://www.pikpng.com/pngl/m/329-3291266_small-mario-mario-super-mario-world-hd-png.png') no-repeat center center;
+.card_face_front_1{
+    background:url('../images/front_1.jpg') no-repeat center center;
     background-size:contain;
 }
 
-.card_face_back{
-    background:url('https://simg.nicepng.com/png/small/168-1684411_super-mario-world-yoshi-sprite-download-mario-super.png') no-repeat center center;
+.card_face_back_1{
+    background:url('../images/back_1.jpg') no-repeat center center;
+    background-size:contain;
+    transform: rotateY(180deg);
+}
+.card_face_front_2{
+    background:url('../images/post01.jpg') no-repeat center center;
+    background-size:contain;
+}
+
+.card_face_back_2{
+    background:url('../images/post04.jpg') no-repeat center center;
+    background-size:contain;
+    transform: rotateY(180deg);
+}
+.card_face_front_3{
+    background:url('../images/post01.jpg') no-repeat center center;
+    background-size:contain;
+}
+
+.card_face_back_3{
+    background:url('../images/post04.jpg') no-repeat center center;
+    background-size:contain;
+    transform: rotateY(180deg);
+}
+.card_face_front_4{
+    background:url('../images/post01.jpg') no-repeat center center;
+    background-size:contain;
+}
+
+.card_face_back_4{
+    background:url('../images/post04.jpg') no-repeat center center;
     background-size:contain;
     transform: rotateY(180deg);
 }
@@ -396,8 +438,15 @@ footer.major {
     body{
         background: url(../images/Defiestafondoweb_01.jpg) no-repeat right fixed;
     }   
+h2{
+    font-size:24px;
+}
+
     #intro, #locacion, #media, #tips {
-        padding: 2em 2em 0em 2em;
+        padding: 2em 2em 2em 2em;
+    }
+    #main{
+        font-size:16px;
     }
     .logo img{
         width:250px;
@@ -406,7 +455,7 @@ footer.major {
         width:150px;
     }
     #locacion img{
-        width:200px;
+        width:100%;
     }
     #footer {
         padding: 2.5em 1em 0.5em 1em ;

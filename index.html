@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154880044-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154880044-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,8 +30,8 @@
         <nav id="nav">
             <ul>
                 <li><a href="#intro" class="active">Introducción</a></li>
-                <!-- <li><a href="#locacion">Ubicación</a></li> -->
-                <li><a href="#second">Tips</a></li>
+                <li><a href="#locacion">Ubicación</a></li>
+                <!-- <li><a href="#second">Tips</a></li> -->
                 <!-- <li><a href="#cta">Álbum</a></li> -->
             </ul>
         </nav>
@@ -37,59 +47,59 @@
                     La propuesta de reubicación reside en la necesidad de cuidar tanto el exterior como el interior del edificio de aquellos productos arrojados que dejan suciedad y mal olor y que son difíciles de limpiar, con el objetivo de respetar un espacio que pertenece a todas y todos, y cuidar el barrio.
                 </p>
             </section>
-            <!-- <section id="locacion">
+            <section id="locacion">
                 <div class="container">
-                    <h3>Ubicación</h3>
-                    <img src="https://vignette.wikia.nocookie.net/zelda/images/2/26/Link_Artwork_LAR.png/revision/latest?cb=20191015020845&path-prefix=es" alt="">
+                    <h2>Ubicación</h2>
+                    <img class="plano" src="produccion/images/Plano_defiesta_fcea.png" alt="">
                 </div>
-            </section> -->
+            </section>
             <!-- <section id="media">
                 <h3>Fotos</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam expedita, numquam nemo magni iste officia quidem cum ullam vero sequi necessitatibus commodi rem reprehenderit. Iure, a quas. Corrupti, molestias.</p>
             </section> -->
-            <section id="tips">
+            <!-- <section id="tips">
                 <div class="escena">
                     <div class="card" onclick="flip(event)">
-                        <div class="card_face card_face_front">
-                            Front
+                        <div class="card_face card_face_front_1">
+                            
                         </div>
-                        <div class="card_face card_face_back">
-                            Back
+                        <div class="card_face card_face_back_1">
+                            
                         </div>
                     </div>
                 </div>
                 <div class="escena">
                     <div class="card" onclick="flip(event)">
-                        <div class="card_face card_face_front">
-                            Front
+                        <div class="card_face card_face_front_2">
+                            
                         </div>
-                        <div class="card_face card_face_back">
-                            Back
-                        </div>
-                    </div>
-                </div>
-                <div class="escena">
-                    <div class="card" onclick="flip(event)">
-                        <div class="card_face card_face_front">
-                            Front
-                        </div>
-                        <div class="card_face card_face_back">
-                            Back
+                        <div class="card_face card_face_back_2">
+                            
                         </div>
                     </div>
                 </div>
                 <div class="escena">
                     <div class="card" onclick="flip(event)">
-                        <div class="card_face card_face_front">
-                            Front
+                        <div class="card_face card_face_front_3">
+                            
                         </div>
-                        <div class="card_face card_face_back">
-                            Back
+                        <div class="card_face card_face_back_3">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="escena">
+                    <div class="card" onclick="flip(event)">
+                        <div class="card_face card_face_front_4">
+                            
+                        </div>
+                        <div class="card_face card_face_back_4">
+                            
                         </div>
                     </div>
                 </div>
               
-            </section>
+            </section> -->
             <section id="contacto">
                 
             </section>
@@ -97,9 +107,10 @@
          <!-- Footer -->
          <footer id="footer">
                 <section>
-                    <!-- <h2>Aliquam sed mauris</h2>
-                    <p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-                    <ul class="actions">
+                    <h2>Contacto</h2>
+                    <p><strong>Secretaría administrativa:</strong><a href="mailto:secretaria_administrativa@ccee.edu.uy"> secretaria_administrativa@ccee.edu.uy</a> </p>
+                    <p><strong>Comunicación:</strong> <a href="mailto:comunicacion.fcea@gmail.com">comunicacion.fcea@gmail.com</a></p>
+                    <!-- <ul class="actions">
                         <li><a href="generic.html" class="button">Learn More</a></li>
                     </ul> -->
                 </section>
@@ -114,9 +125,9 @@
                         <dd><a href="http://fcea.edu.uy/">www.fcea.edu.uy</a></dd>
                     </dl>
                     <ul class="icons">
-                        <li><a href="#" class="icon brands fab fa-twitter alt"></i><span class="label">Twitter</span></a></li>
-                        <li><a href="#" class="icon brands fab fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon brands fab fa-instagram alt"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://twitter.com/FCEA_UdelaR" target="_blank" class="icon brands fab fa-twitter alt"></i><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/FCEA.UDELAR" target="_blank" class="icon brands fab fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/fceaudelar/" target="_blank" class="icon brands fab fa-instagram alt"><span class="label">Instagram</span></a></li>
                         
                     </ul>
                 </section>
