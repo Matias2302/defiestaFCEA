@@ -73,6 +73,46 @@ h2 {
 .logo-2 img {
   width: 400px; }
 
+.container-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.texto {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 #nav {
   width: 74em;
   color: #636363;
@@ -110,6 +150,7 @@ h2 {
   display: inline-block;
   height: 2.25em;
   line-height: 2.25em;
+  padding: 0 1.25em;
   border: 0;
   border-radius: 8px; }
 
@@ -163,6 +204,25 @@ h2 {
 .plano {
   width: 100%; }
 
+.redes-hashtags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.social {
+  background-color: #E9504C;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 3em; }
+
 /*=======Cards===============*/
 #tips {
   display: -webkit-box;
@@ -176,7 +236,7 @@ h2 {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 5em 5em 3em 5em;
+  padding: 2em 5em 3em 5em;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 80%;
   flex: 1 1 80%; }
@@ -388,6 +448,10 @@ ul.icons li:last-child {
 footer.major {
   margin-top: 3em; }
 
+.brands {
+  border-radius: 10px;
+  border: 2px solid #000; }
+
 .icon > .label {
   display: none; }
 
@@ -398,10 +462,6 @@ footer.major {
   height: 2em;
   text-align: center;
   line-height: 2em; }
-
-.fab {
-  border-radius: 10px;
-  border: 2px solid #000; }
 
 /*==========================================*/
 @-webkit-keyframes fadein {
