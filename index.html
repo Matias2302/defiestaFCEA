@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" media="screen">
     <link rel="stylesheet" href="produccion/css/all.min.css">
     <link rel="stylesheet" href="produccion/css/brands.css">
     <link rel="stylesheet" href="produccion/css/styles.css">
@@ -30,9 +31,9 @@
         <nav id="nav">
             <ul>
                 <li><a href="#intro" class="active">Introducción</a></li>
-                <li><a href="#locacion">Ubicación</a></li>
                 <li><a href="#tips">Tips</a></li>
-                <!-- <li><a href="#cta">Álbum</a></li> -->
+                <li><a href="#locacion">Ubicación</a></li>
+                <li><a href="#album">Album</a></li>
             </ul>
         </nav>
         <div id="main">
@@ -48,17 +49,55 @@
                 </p>
                 
                     <p>Para conocer cómo fue tu festejo compartilo en las redes: hacete fotos, subilas a Instagram, Twitter o facebook con el hashtag <strong>#FCEAdefiesta!</strong> y mencioná la cuenta de FCEA:</p>
-                <div class="redes-hashtags">
-                    <i class="social fab fa-facebook-f"></i><p style="margin-right:10px; color:#E9504C;">@fcea.udelar  </p>
-                    <i class="social fab fa-instagram"></i><p style="margin-right:10px;">@fceaudelar  </p>
-                    <i class="social fab fa-twitter"></i><p style="margin-right:10px;">@fcea_udelar</p>
-                </div>
                 
-                <ul class="icons">
-                    <li><a href="https://twitter.com/FCEA_UdelaR" target="_blank" class="icon brands fab fa-twitter alt"></i><span class="label">Twitter</span></a></li>
-                    <li><a href="https://www.facebook.com/FCEA.UDELAR" target="_blank" class="icon brands fab fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://www.instagram.com/fceaudelar/" target="_blank" class="icon brands fab fa-instagram alt"><span class="label">Instagram</span></a></li>   
-                </ul>
+                    <!-- <div class="container-grid">
+                        <div class="row">
+                            <div class="column">
+                                <div class="escena">
+                                    <div class="card" onclick="flip(event)">
+                                        <div class="card_face card_face_front_1">
+                                            <p>hola hola hola hola hola</p>
+                                        </div>
+                                        <div class="card_face card_face_back_1">
+                                            <p>No uses: huevos, harina, pinturas</p>
+                                        </div>
+                                    </div>
+                                </div>     
+                            </div>
+                            <div class="column">
+                                <div class="escena">
+                                    <div class="card" onclick="flip(event)">
+                                        <div class="card_face card_face_front_2">
+                                            
+                                        </div>
+                                        <div class="card_face card_face_back_2">
+                                            
+                                        </div>
+                                    </div>
+                                </div>     
+                            </div>
+                            <div class="column">
+                                <div class="escena">
+                                    <div class="card" onclick="flip(event)">
+                                        <div class="card_face card_face_front_2">
+                                            
+                                        </div>
+                                        <div class="card_face card_face_back_2">
+                                            
+                                        </div>
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+                    </div> -->
+                <div class="redes-hashtags">
+                    <i class="social fab fa-facebook-f"></i><p class="redes">@fcea.udelar  </p>
+                    <i class="social fab fa-instagram"></i><p class="redes">@fceaudelar  </p>
+                    <i class="social fab fa-twitter"></i><p class="redes">@fcea_udelar</p>
+                </div>
+                <div class="link-agenda">
+                    <a href="https://agendaweb.udelar.edu.uy/ReservaWeb/faces/index.xhtml"><img src="produccion/images/link-agenda.jpg" alt=""></a>
+                </div>
             </section>
             <section id="tips">
                 <h2>Algunos tips para tu festejo</h2>
@@ -68,7 +107,7 @@
                     </p>
             
                 </div>
-                <div class="container-grid">
+                <!-- <div class="container-grid">
                     <div class="row">
                         <div class="column">
                             <div class="escena">
@@ -90,10 +129,22 @@
                             Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="container-grid">
                     <div class="row">
                         <div class="column">
+                            <div class="escena">
+                                <div class="card" onclick="flip(event)">
+                                    <div class="card_face card_face_front_1">
+                                        
+                                    </div>
+                                    <div class="card_face card_face_back_1">
+                                        
+                                    </div>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="column texto">
                             <div class="escena">
                                 <div class="card" onclick="flip(event)">
                                     <div class="card_face card_face_front_2">
@@ -106,11 +157,16 @@
                             </div>     
                         </div>
                         <div class="column texto">
-                            <header class="major">
-                            </header>
-                            <p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-                            adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-                            Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                            <div class="escena">
+                                <div class="card" onclick="flip(event)">
+                                    <div class="card_face card_face_front_3">
+                                        
+                                    </div>
+                                    <div class="card_face card_face_back_3">
+                                        
+                                    </div>
+                                </div>
+                            </div>     
                         </div>
                     </div>
                 </div>
@@ -159,13 +215,29 @@
             <section id="locacion">
                 <div class="container2">
                     <h2>Ubicación</h2>
-                    <img class="plano" src="produccion/images/Plano_defiesta_fcea.png" alt="">
+                        <img class="plano" src="produccion/images/Plano_defiesta_fcea.png" alt="">
+                    </a>
+                   
                 </div>
             </section>
-            <!-- <section id="media">
-                <h3>Fotos</h3>
+            <section id="album">
+                <h3>Album</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam expedita, numquam nemo magni iste officia quidem cum ullam vero sequi necessitatibus commodi rem reprehenderit. Iure, a quas. Corrupti, molestias.</p>
-            </section> -->
+                <div class="container-grid">
+                    <div class="gallery">
+                        <img class="single-image" src="produccion/images/01.jpg" alt="">
+                        <img class="single-image" src="produccion/images/02.jpg" alt="">                       
+                    </div>
+                </div>
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
             <section id="contacto">
                 
@@ -173,36 +245,37 @@
         </div>
          <!-- Footer -->
          <footer id="footer">
-                <section>
-                    <h2>Contacto</h2>
-                    <p><strong>Secretaría administrativa:</strong><a href="mailto:secretaria_administrativa@ccee.edu.uy"> secretaria_administrativa@ccee.edu.uy</a> </p>
-                    <p><strong>Comunicación:</strong> <a href="mailto:comunicacion.fcea@gmail.com">comunicacion.fcea@gmail.com</a></p>
-                    <!-- <ul class="actions">
-                        <li><a href="generic.html" class="button">Learn More</a></li>
-                    </ul> -->
-                </section>
-                <section>
-                    <h3>Facultad de Ciencias Económicas y de Administración</h3>
-                    <dl class="alt">
-                        <dt>Dirección</dt>
-                        <dd>Gonzalo Ramírez 1926 &bull; CP 11200 &bull; Montevideo &bull; Uruguay</dd>
-                        <dt>Teléfono</dt>
-                        <dd>(+598)2411 88 39</dd>
-                        <dt>Página web</dt>
-                        <dd><a href="http://fcea.edu.uy/">www.fcea.edu.uy</a></dd>
-                    </dl>
-                    <ul class="icons">
-                        <li><a href="https://twitter.com/FCEA_UdelaR" target="_blank" class="icon brands fab fa-twitter alt"></i><span class="label">Twitter</span></a></li>
-                        <li><a href="https://www.facebook.com/FCEA.UDELAR" target="_blank" class="icon brands fab fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-                        <li><a href="https://www.instagram.com/fceaudelar/" target="_blank" class="icon brands fab fa-instagram alt"><span class="label">Instagram</span></a></li>   
-                    </ul>
-                </section>
+            <section>
+                <h2>Contacto</h2>
+                <p><strong>Secretaría administrativa:</strong><a href="mailto:secretaria_administrativa@ccee.edu.uy"> secretaria_administrativa@ccee.edu.uy</a> </p>
+                <p><strong>Comunicación:</strong> <a href="mailto:comunicacion.fcea@gmail.com">comunicacion.fcea@gmail.com</a></p>
+                <!-- <ul class="actions">
+                    <li><a href="generic.html" class="button">Learn More</a></li>
+                </ul> -->
+            </section>
+            <section>
+                <h3>Facultad de Ciencias Económicas y de Administración</h3>
+                <dl class="alt">
+                    <dt>Dirección</dt>
+                    <dd>Gonzalo Ramírez 1926 &bull; CP 11200 &bull; Montevideo &bull; Uruguay</dd>
+                    <dt>Teléfono</dt>
+                    <dd>(+598)2411 88 39</dd>
+                    <dt>Página web</dt>
+                    <dd><a href="http://fcea.edu.uy/">www.fcea.edu.uy</a></dd>
+                </dl>
+                <ul class="icons">
+                    <li><a href="https://twitter.com/FCEA_UdelaR" target="_blank" class="icon brands fab fa-twitter alt"></i><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/FCEA.UDELAR" target="_blank" class="icon brands fab fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/fceaudelar/" target="_blank" class="icon brands fab fa-instagram alt"><span class="label">Instagram</span></a></li>   
+                </ul>
+            </section>
                 <!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-            </footer>
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.js" integrity="sha256-YRrJ9+c/G7B08a+23qVgtEIj8xQd3tSUwkdkaVF9vUc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.scrolly@0.0.1/jquery.scrolly.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
     <script src="produccion/js/browser.min.js"></script>
     <script src="produccion/js/main-dist.js"></script>
 </body>

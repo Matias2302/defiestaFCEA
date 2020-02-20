@@ -1,96 +1,118 @@
-(function($) {
-    var	$window = $(window),
-		$body = $('body'),
-		$main = $('#main');
-var $nav = $('#nav');
+// const lightbox = document.createElement('div');
+// lightbox.id = 'lightbox';
+// document.body.appendChild(lightbox);
 
-	if ($nav.length > 0) {
+// const images = document.querySelectorAll('img');
+// images.forEach(image => {
+//   image.addEventListener('click', e => {
+//     lightbox.classList.add('active');
+//     const img = document.createElement('img');
+//     img.src = image.src;
+//     while (lightbox.firstChild) {
+//       lightbox.removeChild(lightbox.firstChild);
+//     }
+//     lightbox.appendChild(img);
+//   })
+// })
 
-	// Shrink effect.
-		$main
-			.scrollex({
-				mode: 'top',
-				enter: function() {
-					$nav.addClass('alt');
-				},
-				leave: function() {
-					$nav.removeClass('alt');
-				},
-			});
-		}
-		var $nav_a = $nav.find('a');
+// lightbox.addEventListener('click', e => {
+//   if (e.target !== e.currentTarget) return
+//   lightbox.classList.remove('active');
+// });
 
-		$nav_a
-			.scrolly({
-				speed: 1000,
-				offset: function() { return $nav.height(); }
-			})
-			.on('click', function() {
+// (function($) {
+//     var	$window = $(window),
+// 		$body = $('body'),
+// 		$main = $('#main');
+// var $nav = $('#nav');
 
-				var $this = $(this);
+// 	if ($nav.length > 0) {
 
-				// External link? Bail.
-					if ($this.attr('href').charAt(0) != '#')
-						return;
+// 	// Shrink effect.
+// 		$main
+// 			.scrollex({
+// 				mode: 'top',
+// 				enter: function() {
+// 					$nav.addClass('alt');
+// 				},
+// 				leave: function() {
+// 					$nav.removeClass('alt');
+// 				},
+// 			});
+// 		}
+// 		var $nav_a = $nav.find('a');
 
-				// Deactivate all links.
-					$nav_a
-						.removeClass('active')
-						.removeClass('active-locked');
+// 		$nav_a
+// 			.scrolly({
+// 				speed: 1000,
+// 				offset: function() { return $nav.height(); }
+// 			})
+// 			.on('click', function() {
 
-				// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-					$this
-						.addClass('active')
-						.addClass('active-locked');
+// 				var $this = $(this);
 
-			})
-			.each(function() {
+// 				// External link? Bail.
+// 					if ($this.attr('href').charAt(0) != '#')
+// 						return;
 
-				var	$this = $(this),
-					id = $this.attr('href'),
-					$section = $(id);
+// 				// Deactivate all links.
+// 					$nav_a
+// 						.removeClass('active')
+// 						.removeClass('active-locked');
 
-				// No section for this link? Bail.
-					if ($section.length < 1)
-						return;
+// 				// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
+// 					$this
+// 						.addClass('active')
+// 						.addClass('active-locked');
 
-				// Scrollex.
-				$section.scrollex({
-					mode: 'middle',
-					initialize: function() {
+// 			})
+// 			.each(function() {
 
-						// Deactivate section.
-							if (browser.canUse('transition'))
-								$section.addClass('inactive');
+// 				var	$this = $(this),
+// 					id = $this.attr('href'),
+// 					$section = $(id);
 
-					},
-					enter: function() {
+// 				// No section for this link? Bail.
+// 					if ($section.length < 1)
+// 						return;
 
-						// Activate section.
-							$section.removeClass('inactive');
+// 				// Scrollex.
+// 				$section.scrollex({
+// 					mode: 'middle',
+// 					initialize: function() {
 
-						// No locked links? Deactivate all links and activate this section's one.
-							if ($nav_a.filter('.active-locked').length == 0) {
+// 						// Deactivate section.
+// 							if (browser.canUse('transition'))
+// 								$section.addClass('inactive');
 
-								$nav_a.removeClass('active');
-								$this.addClass('active');
+// 					},
+// 					enter: function() {
 
-							}
+// 						// Activate section.
+// 							$section.removeClass('inactive');
 
-						// Otherwise, if this section's link is the one that's locked, unlock it.
-							else if ($this.hasClass('active-locked'))
-								$this.removeClass('active-locked');
+// 						// No locked links? Deactivate all links and activate this section's one.
+// 							if ($nav_a.filter('.active-locked').length == 0) {
 
-					}
-				});
+// 								$nav_a.removeClass('active');
+// 								$this.addClass('active');
 
-			});	
+// 							}
 
-	// Scrolly.
-		$('.scrolly').scrolly({
-			speed: 1000
-		});
-			})(jQuery);
+// 						// Otherwise, if this section's link is the one that's locked, unlock it.
+// 							else if ($this.hasClass('active-locked'))
+// 								$this.removeClass('active-locked');
+
+// 					}
+// 				});
+
+// 			});	
+
+// 	// Scrolly.
+// 		$('.scrolly').scrolly({
+// 			speed: 1000
+// 		});
+// 			})(jQuery);
 			
 // var card = document.querySelector('.card');
 // card.addEventListener( 'click', function() {
@@ -116,3 +138,11 @@ function flip(event){
     }
   }
 };
+
+$(document).ready(function () {
+	$(".single-image").click(function(){
+	  var t = $(this).attr("src");
+	  $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+	  $("#myModal").modal();
+	});
+  });
