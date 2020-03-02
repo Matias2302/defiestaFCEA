@@ -252,7 +252,7 @@ h2 {
   height: 50%; }
 
 /*=======Cards===============*/
-#tips, #album {
+#tips {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,60 +269,48 @@ h2 {
   -ms-flex: 1 1 80%;
   flex: 1 1 80%; }
 
-.gallery {
-  -webkit-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 10px;
-  column-gap: 10px;
-  margin-top: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  overflow: hidden; }
+#album {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2em 5em 3em 5em;
+  text-align: center; }
 
-.gallery img {
-  width: 100%;
-  height: auto;
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
-  margin-bottom: 10px;
-  opacity: 0.8;
-  page-break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  break-inside: avoid; }
+/*=========GALLERY=================*/
+.container {
+  width: 60%;
+  margin: 2rem auto; }
 
-.gallery img:hover {
-  opacity: 1; }
+.fila {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-.modal-img, .model-vid {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: table; }
+.columna {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
+  padding: 10px; }
 
-.modal-body {
-  padding: 0px; }
+.single-image {
+  width: 100%; }
 
-.modal-dialog {
-  height: 100%;
-  position: relative;
-  margin: auto;
+.flex-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  align-items: center; }
 
-.modal-content {
-  border: none; }
+.flex-grid-thirds .col {
+  width: 32%; }
 
+.flex-grid-thirds .col a {
+  width: 95%;
+  height: 95%; }
+
+/*=================================*/
 .escena {
   padding: 20px;
   width: 15em;
@@ -609,7 +597,11 @@ footer.major {
     column-count: 2; }
   .gallery div {
     margin: 0;
-    width: 200px; } }
+    width: 200px; }
+  .columna {
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%; } }
 
 @media screen and (max-width: 480px) {
   body {
@@ -642,6 +634,8 @@ footer.major {
     column-count: 1; }
   .gallery div {
     margin: 0;
-    width: 200px; } }
+    width: 200px; }
+  .flex-grid {
+    display: block; } }
 
 /*==========================================*/
